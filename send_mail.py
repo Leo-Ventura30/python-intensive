@@ -1,3 +1,7 @@
+import smtplib
+import email.message
+
+
 def enviar_email(nome_loja, tabela):
     server = smtplib.SMTP('smtp.gmail.com:587')
     corpo_email = """
